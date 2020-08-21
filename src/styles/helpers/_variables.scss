@@ -1,0 +1,46 @@
+//colors
+
+//primary
+$primary-1:#03a9f4;
+$primary-2:#f75e2e;
+$primary-3:#ecfa4d;
+$primary-4:#656a70;
+
+//lighten 1 level 
+$pr-1-light-1:lighten($primary-1,20%);
+
+//darken 1 level
+$pr-1-dark-1:darken($primary-1,10%);
+
+
+
+
+
+
+/*//lighten 2 level 
+$pr-1-light-2:lighten($primary-2,20%);
+$pr-2-light-2:lighten($primary-2,32%);
+$pr-3-light-2:lighten($primary-2,40%);
+//lighten 3 level 
+$pr-1-light-3:lighten($primary-3,20%);
+$pr-2-light-3:lighten($primary-3,32%);
+$pr-3-light-3:lighten($primary-3,47%);
+//lighten 4 level 
+$pr-1-light-4:lighten($primary-4,20%);
+$pr-2-light-4:lighten($primary-4,32%);
+$pr-3-light-4:lighten($primary-4,47%);
+/////////////////////////////////////////////////////////*/
+/*//light 2/
+.pr-2-light-1{
+    background-color: $pr-1-light-2;
+}
+.pr-2-light-2{
+    background-color: $pr-2-light-2;
+}
+.pr-2-light-3{
+    background-color: $pr-3-light-2;
+}*/
+/*$pr-2-light-1:lighten($primary-1,32%);
+$pr-3-light-1:lighten($primary-1,47%);*/
+/*$pr-2-dark-1:darken($primary-1,20%);
+$pr-3-dark-1:darken($primary-1,30%);*/
