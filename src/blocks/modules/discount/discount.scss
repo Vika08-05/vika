@@ -1,0 +1,216 @@
+
+.nameheader{
+    background-image: url(../../../img/rocket.png);
+    height: 500px;
+    background-color: $primary-1;
+}
+h6{
+    padding: 35px;
+    margin-left: -30px;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Poppins-M';
+}
+.gridbox{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    // grid-gap: 40px;
+}
+.discount h1{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+    padding-bottom: 50px;
+    font-family: 'Poppins-M';
+    font-weight: bold;
+}
+.discount p{
+	width: 550px;
+	text-align: center;
+	margin: 0 auto;
+    color: $light;
+    font-family: 'Myriad Pro';
+    font-size: 20px;
+}
+.part1{
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 460px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #fff;
+    box-shadow: 1px 1px 40px 1px lightgray;
+}
+.num{
+color: $primary-2;
+font-size: 35px;
+font-family: 'Poppins-R';
+}
+.for-more{
+    color: #351555;
+    font-size: 14px;
+    font-family: 'Poppins-R';
+}
+.pages15{
+    color: $primary-1;
+    font-size: 17px;
+    font-family: 'Poppins-S';
+}
+.hr3{
+    top: -270px;
+    position: relative;
+    width: 180%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid lightgray;
+}
+.part2{
+    padding: 14px;
+    height: 450px;
+    background-color: $primary-1;
+    margin-top: 50px;
+    width: 300px;
+}
+.h1{
+    border-radius: 20px;
+    border: 3px  dashed $pr-1-dark-1 ;
+}
+.our{
+color: $primary-1;
+font-size: 15px;
+font-family:'Poppins-R';
+}
+.ourdiscount{
+    text-align: center;
+font-size: 33px;
+color: $dark;
+font-family: 'Poppins-M';
+padding:0px;
+}
+.ourdiscount:hover{
+    color: $dark;
+    background-color: $light;
+}
+.h1 .par1{
+	padding-top: 20px;
+text-transform: uppercase;
+text-align: center;
+color: $light;
+font-size: 25px;
+font-family:'Poppins-S';
+}
+.par2{
+	margin-top: 17px;
+	line-height: 46px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-radius: 20px;
+	background-color: $pr-1-dark-1;
+	border: 3px  dashed $light ;
+}
+.par2 .get{
+	font-family: 'Poppins-M';
+	font-size: 24px;
+	color: $light;
+	padding-left: 40px;
+}
+.par2 .spaan{
+	font-family: 'Poppins-M';
+	font-size: 14px;
+	color: $light;
+}
+.par2 span{
+font-family: 'Poppins-R';
+padding-left: 80px;
+color: $primary-3;
+font-size: 51.62pt;
+font-weight: 900;
+}
+.par3{
+color: $light;
+font-size: 18px;
+font-family: 'Open Sans-I';
+padding: 30px;
+padding-left: 20px;
+}
+.stars{
+	padding-left: 230px;
+    padding-top: 89px;
+	position: absolute;
+}
+.scissors{
+	padding-left: 11px;
+    padding-top: 87px;
+	position: absolute;
+}
+.ballon{
+	padding-left: 266px;
+    padding-top: 261px;
+	position: absolute;
+}
+
+// /*SLIDER*/
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: $light;
+}
+.mySlides img{
+    margin-left: -10px;
+    margin-top: -35px;
+    padding-bottom: 20px;
+}
+.mySlides p{
+    color:#a3a6a9;
+}
+.mySlides .author1{
+    padding-top: 20px;
+    color:$primary-1;
+}
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 34%;
+    width: auto;
+    margin-top: -30px;
+    font-weight: bold;
+    font-size: 77px;
+    user-select: none;
+  }
+/* Position the "next button" to the right */
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: $light;
+  color: white;
+}
+a:not([href]) {
+    text-decoration: none;
+    color: $primary-1;
+}
+a:not([href]):hover {
+    color: $primary-1;
+    text-decoration: none;
+}
+

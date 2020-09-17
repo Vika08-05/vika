@@ -1,0 +1,205 @@
+.image{
+    background-color: $pr-1-light-3;
+background-image: url(../../../img/imggggg.png);
+background-repeat: no-repeat;
+background-size: 100%;
+height: 470px;
+}
+.girl{
+    height: 400px;
+    right: -356px;
+    top: 30px;
+    position: absolute;
+}
+.s1{
+font-weight: 800;
+font-size:47px;
+color: $pr-1-dark-1;
+font-family: $font-regular;
+}
+.s2{
+    font-weight: 800;
+    font-size:47px;
+    color: $dark;
+    font-family: $font-regular;
+}
+.word .p1{
+    color: #656a70;
+font-size: 20px;
+font-family:'Myriad Pro' ;
+}
+.btt{
+    margin-left: -31px;
+    padding: 20px;
+}
+.btn1 {
+    width: 222px;
+    background-color: #f75e2e;
+    height: 50px;
+    font-family: "Poppins-S";
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    outline: 0 !important;
+}
+.btn1 span{
+    padding-left: 37px;
+    display: flex;
+    padding-top: 15px;
+
+}
+.slidecontainer {
+    padding-bottom: 10px;
+    width: 100%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 73%; /* Full-width */
+    height: 4px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 50px; /* Set a specific slider handle width */
+    height: 4px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+/*BUTTONS*/
+.box{
+    display: grid;
+    grid-template-columns: repeat(5,4fr);
+}
+.text1 {
+    margin-left: -30px;
+    height: 130px;
+    width: 1140px;
+    background-color: $primary-1;
+    padding: 5px;
+    border: 1px solid $primary-1;
+}
+.dropdowntext1 {
+    margin-left: -30px;
+    padding: 8px;
+    padding-right: 110px;
+    background-color: $light;
+    border: 1px solid $light;
+}
+.dropdowntext2 {
+    margin-left: 19px;
+    padding: 8px;
+    padding-right: 110px;
+    background-color: $light;
+    border: 1px solid $light;
+}
+.box h4{
+    color: $light;
+    font-family: 'Poppins-M';
+    font-size:13px ;
+    padding-top: 30px;
+    padding-left: 26px;
+    padding-bottom: 10px;
+}
+.hh4{
+    color: $light;
+    font-family: 'Poppins-M';
+    font-size:13px ;
+    padding-top: 30px;
+    margin-left: -52px;
+    padding-bottom: 10px;
+}
+.text {
+    width: 164px;
+    padding: 5px;
+    background-color: #e0e1e2;
+    margin-left: -12px;
+    border: 1px solid #b2b5b8;
+}
+
+
+
+.text {
+    padding: 5px;
+    background-color: $light;
+    border: 1px solid $light;
+}
+.pagination4 .num2 {
+    background-color: $light;
+    padding-right: 75px;
+    padding-left: 75px;
+}
+.pagination4 a {
+    border: 1.5px solid $light;
+}
+.text11{
+    outline: 0 !important;
+    width: 195px;
+    background-color: $pr-1-dark-1;
+    margin-left: 10px;
+    height: 39px;
+    border: 1px solid $pr-1-dark-1;
+}
+/*WELCOME*/
+.pic{
+    padding-bottom: 60px;
+}
+.welcome h1{
+    top: 628px;
+    font-weight: revert;
+    left: 205px;
+    font-size: 31px;
+    position: absolute;
+    color: $pr-1-dark-1;
+    font-family: 'Myriad Pro';
+}
+.welcome img{
+    margin: 20px;
+    margin-left: -15px;
+    background-color: $pr-1-light-3;
+    padding-top: 40px;
+    padding-left: 110px;
+    padding-right: 110px;
+    float: left;
+}
+.welcome1 h6{
+    padding: 20px;
+font-size: 15px;
+color: $primary-1;
+font-family: 'Poppins-M';
+margin-right: 370px;
+
+}
+.welcome1 h1{
+padding-bottom: 30px;
+font-size: 35px;
+color: $dark;
+font-family: 'Poppins-M';
+font-weight: bold;
+}
+.welcome1 p{
+    font-size: 15px;
+    font-family: 'Myriad Pro';
+    color: #51555a;
+}

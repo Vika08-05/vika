@@ -1,0 +1,171 @@
+.grid{
+    background-color: $primary-1;
+    background-image: url(../../../img/icons_transparent.png);
+}
+.grid h6{
+    padding: 35px;
+    margin-left: -30px;
+    text-align: center;
+font-size: 15px;
+color: $light;
+font-family: 'Poppins-M';
+}
+.grid h1{
+    text-align: center;
+font-size: 35px;
+color: $light;
+padding-bottom: 50px;
+font-family: 'Poppins-M';
+font-weight: bold;
+}
+.boxes{
+    padding-bottom: 40px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 40px;
+}
+.number1{
+   background-color: $light; 
+}
+.number2{
+background-color: $light;
+}
+.number3{
+background-color: $light;
+}
+.boxes h4{
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Poppins-M';
+    padding: 10px;
+}
+.boxes p{
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Poppins-M';
+    padding: 10px;
+    color:#51555a;
+}
+.boxes .img1{
+    position: relative;
+    margin-left: 120px;
+    padding: 10px;
+}
+.icon1{
+    position: absolute;
+    margin-left: -92px;
+    padding-top: 35px;
+}
+.icon2{
+    position: absolute;
+    margin-left: -92px;
+    padding-top: 35px;
+}
+.icon3{
+    position: absolute;
+    margin-left: -96px;
+    padding-top: 22px;
+}
+.btn3 {
+    cursor: pointer;
+    position: relative;
+    left: 125%;
+    padding-top: 12px;
+    margin-top: 30px;
+    text-align: center;
+    width: 220px;
+    background-color:$pr-1-dark-1;
+    height: 50px;
+    font-family: "Poppins-S";
+    color: #fff;
+    border: none;
+    margin-left: 10px;
+    outline: 0 !important;
+}
+/*GRID2*/
+.grid1 h6{
+    padding-top: 60px;
+    padding-bottom: 40px;
+    margin-left: -30px;
+    text-align: center;
+font-size: 15px;
+color: $dark;
+font-family: 'Poppins-M';
+}
+.grid1 h1{
+    text-align: center;
+font-size: 35px;
+color: $dark;
+padding-bottom: 50px;
+font-family: 'Poppins-M';
+font-weight: bold;
+}
+.boxes1{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 40px;
+}
+.number1{
+   background-color: $light; 
+}
+.number2{
+background-color: $light;
+}
+.number3{
+background-color: $light;
+}
+.boxes1 h4{
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Poppins-M';
+    padding: 10px;
+}
+.boxes1 p{
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Poppins-M';
+    padding: 10px;
+    color:#51555a;
+}
+.boxes1 .img1{
+    position: relative;
+    padding: 10px;
+}
+.icon1{
+    position: absolute;
+    margin-left: -92px;
+    padding-top: 35px;
+}
+.icon2{
+    position: absolute;
+    margin-left: -92px;
+    padding-top: 35px;
+}
+/*LINE3*/
+.number4{
+    flex-direction: column;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.box-arrow{
+    width: 1px;
+    height: 258px;
+    border-right: solid $pr-1-light-3 2px;
+    position: absolute;
+    right: 0;
+}
+.arrow{
+    width: 30px;
+    height: 30px;
+    border-right: solid $pr-1-light-3 2px;
+    border-top: solid $pr-1-light-3 2px;
+    background-color: $light;
+    position: absolute;
+    display: block;
+    right: -15px;
+    transform: rotate(45deg);
+    z-index: 15;
+}

@@ -5,42 +5,62 @@ $primary-1:#03a9f4;
 $primary-2:#f75e2e;
 $primary-3:#ecfa4d;
 $primary-4:#656a70;
+$light:#fff;
+$dark:#000;
+//lighten 1 level
+$pr-1-light-1:mix(#fff,$primary-1,30%);
+$pr-2-light-1:mix(#fff,$primary-2,30%);
+$pr-3-light-1:mix(#fff,$primary-3,30%);
+$pr-4-light-1:mix(#fff,$primary-4,30%);
+//lighten 2 level
+$pr-1-light-2:mix(#fff,$primary-1,50%);
+$pr-2-light-2:mix(#fff,$primary-2,50%);
+$pr-3-light-2:mix(#fff,$primary-3,50%);
+$pr-4-light-2:mix(#fff,$primary-4,50%);
+//lighten 3 level
+$pr-1-light-3:mix(#fff,$primary-1,80%);
+$pr-2-light-3:mix(#fff,$primary-2,80%);
+$pr-3-light-3:mix(#fff,$primary-3,80%);
+$pr-4-light-3:mix(#fff,$primary-4,80%);
+//lighten 4 level
+$pr-1-light-4:mix(#fff,$primary-1,90%);
+$pr-2-light-4:mix(#fff,$primary-2,90%);
+$pr-3-light-4:mix(#fff,$primary-3,90%);
+$pr-4-light-4:mix(#fff,$primary-4,90%);
 
-//lighten 1 level 
-$pr-1-light-1:lighten($primary-1,20%);
+
+
 
 //darken 1 level
-$pr-1-dark-1:darken($primary-1,10%);
+$pr-1-dark-1:mix(#000,$primary-1,30%);
+$pr-2-dark-1:mix(#000,$primary-2,30%);
+$pr-3-dark-1:mix(#000,$primary-3,30%);
+$pr-4-dark-1:mix(#000,$primary-4,30%);
+//darken 2 level
+$pr-1-dark-2:mix(#000,$primary-1,50%);
+$pr-2-dark-2:mix(#000,$primary-2,50%);
+$pr-3-dark-2:mix(#000,$primary-3,50%);
+$pr-4-dark-2:mix(#000,$primary-4,50%);
+//darken 3 level
+$pr-1-dark-3:mix(#000,$primary-1,70%);
+$pr-2-dark-3:mix(#000,$primary-2,70%);
+$pr-3-dark-3:mix(#000,$primary-3,70%);
+$pr-4-dark-3:mix(#000,$primary-4,70%);
+//darken 4 level
+$pr-1-dark-4:mix(#000,$primary-1,80%);
+$pr-2-dark-4:mix(#000,$primary-2,80%);
+$pr-3-dark-4:mix(#000,$primary-3,80%);
+$pr-4-dark-4:mix(#000,$primary-4,80%);
 
 
+//poppins
+$font-regular:'Poppins-R';
+$font-medium:'Poppins-M';
+$font-light:'Poppins-L';
+$font-semibold:'Poppins-S';
+$font-bold:'Poppins';
 
+//secondary-font
+$font-secondary-italic:'Open-Sans-I';
+$font-secondary-regular:'Open Sans';
 
-
-
-/*//lighten 2 level 
-$pr-1-light-2:lighten($primary-2,20%);
-$pr-2-light-2:lighten($primary-2,32%);
-$pr-3-light-2:lighten($primary-2,40%);
-//lighten 3 level 
-$pr-1-light-3:lighten($primary-3,20%);
-$pr-2-light-3:lighten($primary-3,32%);
-$pr-3-light-3:lighten($primary-3,47%);
-//lighten 4 level 
-$pr-1-light-4:lighten($primary-4,20%);
-$pr-2-light-4:lighten($primary-4,32%);
-$pr-3-light-4:lighten($primary-4,47%);
-/////////////////////////////////////////////////////////*/
-/*//light 2/
-.pr-2-light-1{
-    background-color: $pr-1-light-2;
-}
-.pr-2-light-2{
-    background-color: $pr-2-light-2;
-}
-.pr-2-light-3{
-    background-color: $pr-3-light-2;
-}*/
-/*$pr-2-light-1:lighten($primary-1,32%);
-$pr-3-light-1:lighten($primary-1,47%);*/
-/*$pr-2-dark-1:darken($primary-1,20%);
-$pr-3-dark-1:darken($primary-1,30%);*/

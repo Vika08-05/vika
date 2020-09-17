@@ -1,5 +1,792 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.conteiner{
+    width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 h1, h2, h3, h4, h5, h6, ul, body {
     margin: 0;
     padding: 0;
 }
+h1{
+    @include font(35px,$font-bold);
+}
+h2{
+    @include font(33px,$font-medium,$pr-4-dark-2);
+    padding:10px;
+    &:hover{
+        color:$light;
+        background-color: $primary-1;
+    }
+}
+h3{
+    @include font(27px,$font-medium,$pr-4-dark-3);
+}
+h4{
+    @include font(22px,$font-medium,$pr-4-dark-3);
+}
+h5{
+    @include font(17px,$font-medium,$pr-4-dark-3);
+}
+h6{
+    @include font(15px,$font-medium,$pr-4-dark-3);
+}
+/*p{
+    @include font(14px,$font-regular,$pr-4-dark-1);
+}*/
+.subtitle{
+   @include font(20px,$font-medium,$pr-4-dark-1); 
+   padding:10px;
+   &:hover{
+    color:$light;
+    background-color: $primary-1;
+}
+}
+.btn{
+    display: flex;
+}
+.btn1{
+    @include btn(250px,$primary-2,50px,$font-semibold);
+    text-transform: uppercase;outline: 0 !important;
+    margin-left: 10px;
+    &:hover{
+        background-color: $pr-2-light-1;
+    }
+    &[disabled]{
+        background-color: $pr-4-light-2;
+    }
+}
+.btn2{
+    @include btn(300px,$primary-1,50px,$font-semibold);
+    margin-left: 10px;outline: 0 !important;
+    border: none;
+    &:hover{
+        background-color: $pr-1-light-2;
+    }
+    &[disabled]{
+        background-color: $pr-4-light-2;
+    }
+}
 
+.btn3{
+    @include btn(220px,$primary-1,50px,$font-semibold);
+    margin-left: 10px;outline: 0 !important;
+    &:hover{
+        background-color: $pr-1-light-2;
+    }
+    &[disabled]{
+        background-color: $pr-4-light-2;
+    }
+}
+
+.btn4{
+    @include btn(220px,$light,50px,$font-semibold,1px solid ,$primary-2);
+    text-transform: uppercase;outline: 0 !important;
+    margin-left: 10px;
+    &:hover{
+        background-color: $pr-2-light-1;
+        color: $light;
+    }
+    &[disabled]{
+        color: $light;
+        background-color: $pr-4-light-2;
+    }
+}
+.btn5{
+    @include btn(220px,$light,50px,$font-semibold,1px solid ,$primary-1);
+    margin-left: 10px;outline: 0 !important;
+    &:hover{
+        background-color: $pr-1-light-2;
+        color: $light;
+    }
+    &[disabled]{
+        color: $light;
+        background-color: $pr-4-light-2;
+    }
+}
+//btn small
+.bbtn1{
+    @include btn(190px,$primary-2,50px,$font-semibold);
+    text-transform: uppercase;outline: 0 !important;
+    margin-left: 10px;
+    &:hover{
+        background-color: $pr-2-light-1;
+    }
+    &[disabled]{
+        background-color: $pr-4-light-2;
+    }
+}
+.bbtn2{
+    @include btn(190px,$primary-1,50px,$font-semibold);
+    margin-left: 10px;outline: 0 !important;
+    border: none;
+    &:hover{
+        background-color: $pr-1-light-2;
+    }
+    &[disabled]{
+        background-color: $pr-4-light-2;
+    }
+}
+
+.bbtn3{
+    @include btn(190px,$primary-1,50px,$font-semibold);
+    margin-left: 10px;outline: 0 !important;
+    &:hover{
+        background-color: $pr-1-light-2;
+    }
+    &[disabled]{
+        background-color: $pr-4-light-2;
+    }
+}
+
+.bbtn4{
+    @include btn(190px,$light,50px,$font-semibold,1px solid ,$primary-2);
+    text-transform: uppercase;outline: 0 !important;
+    margin-left: 10px;
+    &:hover{
+        background-color: $pr-2-light-1;
+        color: $light;
+    }
+    &[disabled]{
+        color: $light;
+        background-color: $pr-4-light-2;
+    }
+}
+.bbtn5{
+    @include btn(190px,$light,50px,$font-semibold,1px solid ,$primary-1);
+    margin-left: 10px;outline: 0 !important;
+    &:hover{
+        background-color: $pr-1-light-2;
+        color: $light;
+    }
+    &[disabled]{
+        color: $light;
+        background-color: $pr-4-light-2;
+    }
+}
+
+//QUOTATION
+.quotation{
+    border-left: $primary-1 solid 4px;
+    background-color: $pr-1-light-3;
+    padding: 10px;
+    margin-left: 10px;
+}
+.quotation p{
+    @include font(17px,$font-regular,$pr-1-dark-1);
+}
+/*ERROR-ENTER*/
+.error-enter{
+    padding-left: 20px;
+    display: inline-block;
+    position: relative;
+
+input{
+    outline: 0 !important;
+    border: solid $primary-2 1px;
+    background-color: $light;
+    width: 320px;
+    height: 50px;
+    font-size: 13px;
+    font-family: $font-regular;
+    color: $primary-2;
+}
+    &::before{
+       content:"" ;
+       width: 1px;
+       height: 15px;
+       background-color: $primary-2;
+       position: absolute;
+       right: 18px;
+       transform: rotate(45deg);
+       top: 17px;
+    }
+    &::after{
+       content:"" ;
+       display: block;
+       width: 1px;
+       height: 15px;
+       background-color: $primary-2;
+       position: absolute;
+       right: 18px;
+       transform: rotate(-45deg);
+       top: 17px;
+    }
+}
+/*CORECT-ENTER*/
+.corect-enter{
+    padding-top: 20px;
+    padding-left: 20px;
+    display:inline-block;
+    position: relative;
+
+input{
+    outline: 0 !important;
+    border: solid #09a912 1px;
+    background-color: $light;
+    width: 320px;
+    height: 50px;
+    font-size: 13px;
+    font-family: $font-regular;
+    color: #09a912;
+}
+    &::before{
+       content:"" ;
+       width: 1px;
+       height: 15px;
+       background-color: #09a912;
+       position: absolute;
+       right: 10px;
+       transform: rotate(45deg);
+       top: 38px;
+    }
+    &::after{
+       content:"" ;
+       display: block;
+       width: 1px;
+       height: 10px;
+       background-color: #09a912;
+       position: absolute;
+       right: 19px;
+       transform: rotate(-45deg);
+       top: 43px;
+    }
+}
+
+
+//POPUP
+.popup{
+    margin-left: 20px;
+    width: 320px;
+    height: 150px;
+    border: solid 1px $pr-4-light-2;
+}
+.popup p{
+    padding: 15px;
+    text-align: justify;
+    color: $pr-4-light-1;
+}
+//TABS
+    * {box-sizing: border-box}
+    
+    /* Set height of body and the document to 100% */
+    body, html {
+      height: 40%;
+      margin: 0;
+      font-family: Arial;
+    }
+    
+    /* Style tab links */
+    .tablink {
+        outline: 0 !important;
+      background-color:$light;
+      border: none;
+      color: $dark;
+      float: left;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      font-size: 17px;
+      width: 15%;
+    }
+    .tablink:focus{
+        border-bottom: solid 2px $primary-2;
+    }
+    /* Style the tab content (and add height:100% for full page content) */
+    .tabcontent {
+      color: white;
+      display: none;
+      padding: 100px 20px;
+      height: 100%;
+    }
+
+
+    /*PAGINATION*/
+      .point {
+        margin-left: 40px;
+        color: $pr-4-light-1;
+        float: left;
+        text-decoration: none;
+        transition: background-color .3s;
+      }
+      .page-link{
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          color: $pr-4-light-2;
+          border: none;
+      }
+      .page-link:focus{
+          color: $light;
+          background-color: $primary-1;
+          box-shadow: none;
+      }
+      .page-link:hover{
+          color: $pr-4-light-2;
+          background-color: $light;
+      }
+      .page-link:focus:hover{
+          color: $light;
+          background-color: $primary-1;
+      }
+   .point{
+      padding-top: 7px;
+   }
+   .point:hover{
+       text-decoration: none;
+       color:$pr-4-light-1 ;
+   }
+   /**/ .point1{
+        margin-right: 40px; 
+        padding-top: 7px;
+        color: $pr-4-light-1;
+        float: left;
+        text-decoration: none;
+        transition: background-color .3s;
+      }
+      .point1:hover{
+        text-decoration: none;
+        color:$pr-4-light-1 ;
+    }
+/*DOTTED-PAGINATION*/
+.dots{
+    margin-left: 20px;
+}
+    .dot {
+        border: 2px solid $primary-4;
+        height: 16px;
+        width: 10px;
+        background-color: $primary-4;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      .dot:focus{
+          border: 2px $primary-1 solid;
+         background-color:$light;
+         outline: 0 !important;
+      }     
+/*SOCIAL PICS*/
+.fa-facebook-f{
+    font-size: 25px;
+    padding-left: 10px;
+    color: $pr-1-dark-2;
+}
+.fa-twitter{
+    font-size: 25px;
+    padding-left: 10px;
+    color: $primary-1;
+}
+.fa-pinterest-p{
+    font-size: 25px;
+    padding-left: 10px;
+    color: red;
+}
+.fa-google-plus-g{
+    font-size: 29px;
+    padding-left: 10px;
+    color: $primary-2;
+}
+.fab.disabled,
+.fab[disabled],
+.disabled > .fab,
+[disabled] > .fab {
+  color:$pr-4-light-2 ;
+  /*optional*/ cursor: not-allowed;
+  /*optional*/ pointer-events: none;
+}
+/*CIRCLE*/
+.circle1{
+    border-radius: 50%;
+    background-color: $primary-1;
+    border: solid 2px $light;
+    width: 45px;
+    height: 45px;
+}
+.circle2{
+    border-radius: 50%;
+    background-color: $primary-1;
+    border: solid 2px $light;
+    width: 45px;
+    height: 45px;
+}
+.circle3{
+    border-radius: 50%;
+    background-color: $primary-1;
+    border: solid 2px $light;
+    width: 45px;
+    height: 45px;
+}
+.circle4{
+    border-radius: 50%;
+    background-color: $primary-1;
+    width: 45px;
+    height: 45px;
+}
+.circle{
+   display: flex;
+}
+.circle1 .fa-facebook-f{
+    font-size: 20px;
+padding-top: 8px;
+padding-left: 13px;
+color: $light;
+}
+.circle2 .fa-twitter{
+    font-size: 20px;
+padding-top: 9px;
+color: $light;
+} 
+.circle3 .fa-pinterest-p{
+    font-size: 20px;
+padding-top: 8px;
+padding-left: 13px;
+color: $light;
+}
+.circle4 .fa-google-plus-g{
+    font-size: 23px;
+  padding-top: 9px;
+  color: $light;
+}
+.circle1:hover{
+    background-color: $pr-1-dark-2;
+}
+.circle2:hover{
+    background-color: $pr-1-dark-2;
+}
+.circle3:hover{
+    background-color: $pr-1-dark-2;
+}
+.circle4:hover{
+    background-color: $pr-1-dark-2;
+}
+
+
+
+/*INPUT*/
+label, .radio[type="radio"], .checkbox[type="checkbox"] {
+    line-height: 2.1ex;
+ }
+  
+ .radio[type="radio"],
+ .checkbox[type="checkbox"] {
+     position: absolute;
+     left: -999em;
+ }
+  
+ .radio[type="radio"] + label,
+ .checkbox[type="checkbox"] + label {
+     position: relative;
+     overflow: hidden;
+     cursor: pointer;
+ }
+  
+ .radio[type="radio"] + label::before,
+ .checkbox[type="checkbox"] + label::before {
+     margin-left: 20px;
+    content: "";
+    display: inline-block;
+    vertical-align: -25%;
+    height: 2ex;
+    width: 2ex;
+    background-color: white;
+    border: 1px solid rgb(166, 166, 166);
+    border-radius: 4px; 
+    margin-right: 0.5em;
+ }
+  
+ .radio[type="radio"]:checked + label::before {
+    background: radial-gradient(circle at center, $pr-1-dark-1 .6ex, white .7ex);
+ }
+  
+ .radio[type="radio"] + label::before {
+    border-radius: 50%;
+ }
+  
+ .checkbox[type="checkbox"]:checked + label::after {
+    content: '';
+    position: absolute;
+    width: 1.2ex;
+    height: 1.0ex;
+    background: rgba(0, 0, 0, 0);
+    top: 0.5ex;
+    left: 2.8ex;
+    border: 3px solid $light;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+ }
+.radio{
+    display: flex;
+}
+  /* стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+    border:1.5px solid $primary-1;
+  }
+  /* стили для активного состояния чекбокса (при нажатии на него) */
+  .custom-checkbox:not(:disabled):active+label::before {
+    background-color: $primary-1;
+    border-color: $primary-1;
+  }
+  /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+  .custom-checkbox:focus:not(:checked)+label::before {
+    border-color: $primary-1;
+  }
+  /* стили для чекбокса, находящегося в состоянии disabled */
+  .custom-checkbox:disabled+label::before {
+    background-color:$pr-4-light-2;
+    
+  }
+  .custom-checkbox:checked+label::before {
+    background-color: $primary-1;
+    border: 1px solid $primary-1;
+  }
+/*RADIO*/
+ /* стили при наведении курсора на радио */
+ .custom-radio:not(:disabled):not(:checked)+label:hover::before {
+    border:  1.5px solid $primary-1;
+  }
+  /* стили для активной радиокнопки (при нажатии на неё) */
+  .custom-radio:not(:disabled):active+label::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+  }
+  /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+  .custom-radio:focus:not(:checked)+label::before {
+    border-color: #80bdff;
+  }
+  /* стили для радиокнопки, находящейся в состоянии checked */
+  .custom-radio:checked+label::before {
+    border-color: #0b76ef;
+    background-color: #0b76ef;
+  }
+  /* стили для радиокнопки, находящейся в состоянии disabled */
+  .custom-radio:disabled+label::before {
+    background-color:$pr-4-light-2;
+    color: $light;
+  }
+
+  .list{
+    padding-left: 20px;
+    list-style-type: none;
+     li{
+         @include font (15px,$font-medium,$pr-4-dark-1);
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        &::before{
+            content: '';
+            display: block;
+            width: 15px;
+            height: 14px;
+            background-color: $primary-1;
+            position: relative;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        &::after{
+            content: '';
+            display: block;
+            width: 8px;
+            height: 5px;
+            border: solid 1px $light;
+            border-width: 0 0 1.5px 1.5px;
+            transform: rotate(-45deg);
+            position: absolute;
+            left: 4px;
+        }
+    }
+}
+.text{
+    padding: 5px;
+    background-color: $pr-4-light-3;
+    border: 1px solid $pr-4-light-2;
+}
+.text:hover{
+    background-color: $light;
+}
+.text:focus{
+    border: 1.5px solid $primary-1;
+    background-color: $light;
+    outline: 0 !important;
+}
+.dropdowntext{
+    margin-top:20px;
+    margin-left:20px ; 
+    padding: 8px;
+    padding-right: 130px;
+    background-color: $pr-4-light-3;
+    border: 1px solid $pr-4-light-2;
+}
+.dropdowntext:hover{
+    background-color: $light;
+}
+.dropdowntext:focus{
+    border: 1.5px solid $primary-1;
+    background-color: $light;
+    outline: 0 !important;
+}
+/*NUMBER OF PAGES*/
+.pagination4 {
+    display: inline-block;
+  }
+  
+  .pagination4 a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  .pagination4 a {
+    border: 1.5px solid $pr-4-light-3; 
+  }
+  .pagination4 .num2{
+      background-color: $pr-4-light-3;
+      padding-right: 75px;
+      padding-left: 75px;
+  }
+
+
+
+  /*Main*/
+  .colors{
+    width: 500px;
+}
+.colors>div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
+.colors>div>div{
+    width: 70px;
+    height: 70px;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+//colors
+.pr-1{
+    background-color: $primary-1;
+}
+.pr-2{
+    background-color: $primary-2;
+}
+.pr-3{
+    background-color: $primary-3;
+}
+.pr-4{
+    background-color: $primary-4;
+}
+/*///////////////////////////////////*/
+.pr-1-light-1{
+    background-color: $pr-1-light-1;
+}
+.pr-2-light-1{
+    background-color: $pr-2-light-1;
+}
+.pr-3-light-1{
+    background-color: $pr-3-light-1;
+}
+.pr-4-light-1{
+    background-color: $pr-4-light-1;
+}
+/*//////////////*/
+.pr-1-light-2{
+    background-color: $pr-1-light-2;
+}
+.pr-2-light-2{
+    background-color: $pr-2-light-2;
+}
+.pr-3-light-2{
+    background-color: $pr-3-light-2;
+}
+.pr-4-light-2{
+    background-color: $pr-4-light-2;
+}
+/*/////////////*/
+.pr-1-light-3{
+    background-color: $pr-1-light-3;
+}
+.pr-2-light-3{
+    background-color: $pr-2-light-3;
+}
+.pr-3-light-3{
+    background-color: $pr-3-light-3;
+}
+.pr-4-light-3{
+    background-color: $pr-4-light-3;
+}
+/*//////////////*/
+.pr-1-light-4{
+    background-color: $pr-1-light-4;
+}
+.pr-2-light-4{
+    background-color: $pr-2-light-4;
+}
+.pr-3-light-4{
+    background-color: $pr-3-light-4;
+}
+.pr-4-light-4{
+    background-color: $pr-4-light-4;
+}
+/*///////////*/
+/*////////////*/
+.pr-1-dark-1{
+    background-color: $pr-1-dark-1;
+}
+.pr-2-dark-1{
+    background-color: $pr-2-dark-1;
+}
+.pr-3-dark-1{
+    background-color: $pr-3-dark-1;
+}
+.pr-4-dark-1{
+    background-color: $pr-4-dark-1;
+}
+/*/////////////*/
+.pr-1-dark-2{
+    background-color: $pr-1-dark-2;
+}
+.pr-2-dark-2{
+    background-color: $pr-2-dark-2;
+}
+.pr-3-dark-2{
+    background-color: $pr-3-dark-2;
+}
+.pr-4-dark-2{
+    background-color: $pr-4-dark-2;
+}
+/*//////////*/
+.pr-1-dark-3{
+    background-color: $pr-1-dark-3;
+}
+.pr-2-dark-3{
+    background-color: $pr-2-dark-3;
+}
+.pr-3-dark-3{
+    background-color: $pr-3-dark-3;
+}
+.pr-4-dark-3{
+    background-color: $pr-4-dark-3;
+}
+/*//////////////*/
+.pr-1-dark-4{
+    background-color: $pr-1-dark-4;
+}
+.pr-2-dark-4{
+    background-color: $pr-2-dark-4;
+}
+.pr-3-dark-4{
+    background-color: $pr-3-dark-4;
+}
+.pr-4-dark-4{
+    background-color: $pr-4-dark-4;
+}
+/*/////////////*/

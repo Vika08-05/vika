@@ -1,0 +1,93 @@
+<div class=" discount">
+  <div class="nameheader">
+      <h6>02  Our advantages</h6>
+        <h1>Our discount program </h1>
+        <p>By utilizing elements and principles of Material Design, we were able to create a framework that incorporates </p>
+  </div>
+          
+        <div class="container d-flex justify-content-center gridbox col-8" style="margin-top: -248px;">
+            <div class="part1">
+            <div class="grid1">
+            <h1 style="color: black;"><span class="num">4% <br> OFF<Br></span><span class="for-more">for more than</span><BR><span class="pages15"> 15 pages</span>  </h1>
+        </div>
+        <div class="grid1">
+            <h1 style="color: black;"><span class="num">5%<br> OFF<Br> </span> <span class="for-more">for more than</span><br><span class="pages15">15 pages</span> </h1>
+        </div>
+    <div class="grid1">
+          <h1><span class="num">10%  <br>OFF <br></span><span class="for-more">for more than</span><br><span class="pages15"> 15 pages</span> </h1>
+    </div>
+    <div class="grid1">
+          <h1><span class="num">15%  <br>OFF <br></span><span class="for-more"> for more than</span><br><span class="pages15"> 15 pages</span></h1>
+    </div>
+    <hr class="hr3">
+    </div>
+    <div class="part2 col-4">
+        <img class="stars" src="../../../img/stars.png" alt="">
+        <img class="scissors" src="../../../img/scissors.png" alt="">
+        <img class="ballon" src="../../../img/Balloon.png" alt="">
+        <div class="h1">
+        <h3 class="par1">Try our service &<br> get huge discounts</h3>
+        <h2 class="par2"><span class="get">get</span>  <br><span>15% <br><span>OFF</span> </span> <br><span class="spaan"> for your 1st order</span></h2>
+        <h3 class="par3">Use discount15 as discount code</h3>
+
+        </div>
+      
+    </div>
+</div>
+<div class="container">
+    <h6 class="our">05  Testimonials</h6>
+    <h2 class="ourdiscount">What our clients says </h2>
+      <div class="slideshow-container">
+          <div class="mySlides">
+              <img src="../../../img/Vector Smart Object.png" alt="">
+            <br><q>Using BestEssayService.net was possibly the best choice of my academic career. Even though I work full-time, I managed to submit all my assignments on time owing to the broad array of services on offer. No matter what written work I needed, help was available. I would give a full ten marks.1</q>
+            <p class="author1">Lorna Grey</p>
+            <p class="author">20 apr 2016 at 8:23 </p>
+          </div>
+          <div class="mySlides">
+              <img src="../../../img/Vector Smart Object.png" alt="">
+              <br><q>Using BestEssayService.net was possibly the best choice of my academic career. Even though I work full-time, I managed to submit all my assignments on time owing to the broad array of services on offer. No matter what written work I needed, help was available. I would give a full ten marks.2</q>
+            <p class="author1">Lorna Grey</p>
+            <p class="author">20 apr 2016 at 8:23 </p>
+          </div>
+          <div class="mySlides">
+              <img src="../../../img/Vector Smart Object.png" alt="">
+              <br><q>Using BestEssayService.net was possibly the best choice of my academic career. Even though I work full-time, I managed to submit all my assignments on time owing to the broad array of services on offer. No matter what written work I needed, help was available. I would give a full ten marks.3</q>
+            <p class="author1">Lorna Grey</p>
+            <p class="author">20 apr 2016 at 8:23 </p>
+          </div>
+          <a class="prev"  onclick="plusSlides(-1)">❮</a>
+          <a class="next"  onclick="plusSlides(1)">❯</a>
+          </div>
+      
+          <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+          }
+          </script>
+      </div>
+  
+</div>
